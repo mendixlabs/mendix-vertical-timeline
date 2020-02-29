@@ -2,7 +2,7 @@
 [![Dependencies](https://david-dm.org/JelteMX/mendix-vertical-timeline.svg)]([https://david-dm.org/JelteMX/mendix-vertical-timeline](https://david-dm.org/JelteMX/mendix-vertical-timeline))
 [![DevDependencies](https://david-dm.org/JelteMX/mendix-vertical-timeline/dev-status.svg)]([https://david-dm.org/JelteMX/mendix-vertical-timeline?type=dev](https://david-dm.org/JelteMX/mendix-vertical-timeline?type=dev))
 [![Support](https://img.shields.io/badge/Support-Community%20(no%20active%20support)-orange.svg)](https://docs.mendix.com/developerportal/app-store/app-store-content-support)
-![WM](https://img.shields.io/badge/Webmodeler%20compatible-YES-green.svg)
+![WM](https://img.shields.io/badge/Webmodeler%20compatible-NO-red.svg)
 [![Studio](https://img.shields.io/badge/Studio%20version-8.7%2B-blue.svg)](https://appstore.home.mendix.com/link/modeler/)
 [![GitHub release](https://img.shields.io/github/release/JelteMX/mendix-vertical-timeline)](https://github.com/JelteMX/mendix-vertical-timeline/releases/latest)
 [![GitHub issues](https://img.shields.io/github/issues/JelteMX/mendix-vertical-timeline)](https://github.com/JelteMX/mendix-vertical-timeline/issues)
