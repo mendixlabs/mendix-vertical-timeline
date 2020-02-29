@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<package xmlns="http://www.mendix.com/package/1.0/">
+    <clientModule name="TimeLine" version="XXX" xmlns="http://www.mendix.com/clientModule/1.0/">
+        <widgetFiles>
+            <widgetFile path="TimelineContainer.xml"/>
+            <widgetFile path="TimelineElement.xml"/>
+        </widgetFiles>
+        <files>
+            <file path="mendix/TimeLine"/>
+        </files>
+    </clientModule>
+</package>

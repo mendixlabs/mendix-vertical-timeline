@@ -1,0 +1,11 @@
+{
+    "version": "independent",
+    "packages": ["widgets/*"],
+    "command": {
+        "version": {
+            "ignoreChanges": ["*.md"],
+            "message": "chore: release",
+            "allowBranch": "master"
+        }
+    }
+}

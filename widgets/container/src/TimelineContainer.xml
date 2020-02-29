@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="mendix.timelinecontainer.TimelineContainer" pluginWidget="true" needsEntityContext="false" offlineCapable="true"
+        supportedPlatform="Web"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Vertical Timeline Container (standalone)</name>
+    <description>TimeLine Container, part of the TimeLine widgets</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="Data">
+            <property key="dataSource" type="datasource" isList="true" required="true">
+                <caption>Data source</caption>
+                <description>Data Source for the TimeLine Elements</description>
+            </property>
+            <property key="elements" type="widgets" required="true" dataSource="dataSource">
+                <caption>Place your TimeLine Element here</caption>
+                <description />
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="UI">
+            <property key="animate" type="boolean" defaultValue="true">
+                <caption>Animate</caption>
+                <description>Enable or disable animations on elements</description>
+            </property>
+            <property key="layout" type="enumeration" defaultValue="twoColumn">
+                <caption>Layout</caption>
+                <description></description>
+                <enumerationValues>
+                     <enumerationValue key="twoColumn">Two columns</enumerationValue>
+                     <enumerationValue key="singleColumn">Single column</enumerationValue>
+                </enumerationValues>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>

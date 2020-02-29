@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="mendix.timelineelement.TimelineElement" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Web"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Vertical Timeline Element (standalone)</name>
+    <description>Vertical TimeLine Element, part of the TimeLine widgets</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="General">
+            <property key="content" type="widgets" required="true">
+                <caption>Content</caption>
+                <description />
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="UI">
+            <propertyGroup caption="Date">
+                <property key="dateExpr" type="expression" required="false" defaultValue="'date'">
+                    <caption>Date</caption>
+                    <description></description>
+                    <returnType type="String" />
+                </property>
+            </propertyGroup>
+            <propertyGroup caption="Position">
+                <property key="elementPosition" type="enumeration" defaultValue="auto">
+                    <caption>Position</caption>
+                    <description></description>
+                    <enumerationValues>
+                         <enumerationValue key="auto">Auto</enumerationValue>
+                         <enumerationValue key="left">Left</enumerationValue>
+                         <enumerationValue key="right">Right</enumerationValue>
+                    </enumerationValues>
+                </property>
+            </propertyGroup>
+            <propertyGroup caption="Icon">
+                <property key="icon" type="icon" required="false">
+                    <caption>Icon</caption>
+                    <description></description>
+                </property>
+                <property key="iconClassName" type="textTemplate" required="false">
+                    <caption>Icon class</caption>
+                    <description></description>
+                </property>
+                <property key="iconClickAction" type="action" required="true">
+                    <caption>On click</caption>
+                    <description></description>
+                </property>
+            </propertyGroup>
+        </propertyGroup>
+        <propertyGroup caption="Common">
+            <systemProperty key="Name" />
+            <systemProperty key="Visibility" />
+        </propertyGroup>
+    </properties>
+</widget>

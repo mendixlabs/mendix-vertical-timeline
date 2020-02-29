@@ -1,0 +1,41 @@
+{
+  "name": "timelineelement",
+  "widgetName": "TimelineElement",
+  "version": "1.0.0",
+  "description": "My widget description",
+  "copyright": "2020 Mendix Technology BV",
+  "author": "Jelte Lagendijk <jelte.lagendijk@mendix.com>",
+  "config": {
+    "widgetPath": "./dist/MxTestProject/widgets",
+    "projectPath": "./dist/MxTestProject/",
+    "mendixHost": "http://windows:8080",
+    "developmentPort": "3000"
+  },
+  "packagePath": "mendix",
+  "scripts": {
+    "start": "concurrently \"pluggable-widgets-tools start:server --open\" \"npm:dev\"",
+    "dev": "pluggable-widgets-tools start:ts",
+    "build": "pluggable-widgets-tools build:ts",
+    "lint": "pluggable-widgets-tools lint",
+    "lint:fix": "pluggable-widgets-tools lint:fix",
+    "prerelease": "npm run lint",
+    "release": "pluggable-widgets-tools release:ts"
+  },
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@mendix/pluggable-widgets-tools": "^8.7.0",
+    "@types/big.js": "^4.0.5",
+    "@types/classnames": "^2.2.4",
+    "@types/jest": "^24.0.0",
+    "@types/react": "^16.8.17",
+    "@types/react-dom": "^16.8.4",
+    "@types/react-test-renderer": "^16.8.1",
+    "@types/react-vertical-timeline-component": "^2.5.0",
+    "mendix-client": "^7.15.8"
+  },
+  "dependencies": {
+    "big.js": "^5.2.2",
+    "classnames": "^2.2.6",
+    "react-vertical-timeline-component": "^2.5.0"
+  }
+}

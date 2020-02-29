@@ -1,0 +1,14 @@
+dist
+node_modules
+.env
+*.log
+*.bak
+*.launch
+mxproject
+coverage
+
+**/TestProjects
+
+**/results
+.vscode
+.DS_Store

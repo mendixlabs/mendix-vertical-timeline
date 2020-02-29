@@ -1,0 +1,50 @@
+{
+  "name": "mendix-timeline-widgets",
+  "version": "1.0.0",
+  "description": "Timeline widgets for Mendix",
+  "copyright": "2020 Mendix Technology BV",
+  "author": "Jelte Lagendijk <jelte.lagendijk@mendix.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jeltemx/mendix-vertical-timeline.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "lerna bootstrap --no-ci",
+    "build": "lerna run build",
+    "release": "lerna run release",
+    "bundle": "gulp bundle",
+    "dist": "npm run release && npm run bundle"
+  },
+  "keywords": [
+    "timeline",
+    "widgets",
+    "mendix"
+  ],
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@mendix/pluggable-widgets-tools": "^8.6.0",
+    "@types/big.js": "^4.0.5",
+    "@types/classnames": "^2.2.4",
+    "@types/enzyme": "^3.1.10",
+    "@types/enzyme-adapter-react-16": "^1.0.2",
+    "@types/jasmine": "^3.4.0",
+    "@types/jest": "^24.0.0",
+    "@types/react": "^16.8.17",
+    "@types/react-bootstrap": "^0.32.20",
+    "@types/react-dom": "^16.8.4",
+    "@types/react-test-renderer": "^16.8.1",
+    "@types/webdriverio": "^4.13.0",
+    "cross-env": "^7.0.0",
+    "dotenv": "^8.2.0",
+    "gulp-replace": "^1.0.0",
+    "lerna": "^3.20.2",
+    "terser-webpack-plugin": "^2.3.5",
+    "ts-node": "^8.6.2",
+    "webpack-bundle-analyzer": "^3.6.0"
+  },
+  "dependencies": {
+    "big.js": "^5.2.2",
+    "classnames": "^2.2.6"
+  }
+}
