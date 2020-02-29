@@ -5,7 +5,7 @@
         xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
     <name>Vertical Timeline Element (standalone)</name>
     <description>Vertical TimeLine Element, part of the TimeLine widgets</description>
-    <icon/>
+    <icon>iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACpklEQVR4Xu2aO2hVQRCGv0iilRACiZ1goYUxFjZCClNYio1a+WhNBLEKKogmMQqCloKPRvCBhSaNtYUpAmk1sTBFIJ0KIWDlA5WBvcnhcsPNvu4OnNnqwDmzM/PvPHb3/F3UfHTV3H8MAIuAmiNgKVDzAEheBPuBPZlB/Qp8T6UjRQrsBG4BF4C9qQxrM88q8AK4DfyK0RkLQC8wBwwBi+452eps4ZhE2THgEPDJPa+HghALwEvgHHANuA/8CzXEU07svgrcA8QGib6gEQPAfuALMAOcCdIeLyS6TwEHgOWQ6WIAOAu8cs6LISWGAP8GEFtehxgQA4AUvingsMvFEP2xMlJ7PgITriB6zxcDwKRT3CiA3soTCDQKoSyE2OM9DABvyDYFLAK2SIHjwEOgJwLcVqK/gcvA+8pLlSkwDDwAZIeYcsiObxyY1w5ASqfbzaUyAtoZnfK9AeD2INYGNe0DZG9xMFMX+Nx04FKZAheBJykTvTLXKPBUexcYAM5naoNy9P2mHYBMi99yWpUpYAB0EAGLAI37gG7gaKY2uAD80V4Ex4BHmdLgEvBYOwByVS4XlTlOg7NA9QrcaoDGGpAp+m0f0AoBSwGNKbALGMlUBD8AP7V3gdq3wd3AyUwR8A74oT0CrAt0EAHrAhq7QAcDYIMlYrfCmm6FjwB3PLrA26YTnk8EqawBJ4BnHgA8B674eG1tcBMBlREQuJhBYgZAyTZYe5JU7WlyDaKk3NOdDsrgeKGiREkxv0GVveFoq3/jfdrWDDuA68DdklRZsbRKll5yZOnqz8tteeP5kfx8FbL0oAaytNgu1983HWl6n6czoZ+vOJrudGm6fLMDfYCsUM4hEbaWSkEMUzSVDUXnMQCKwq9AuUWAgkUoaoJFQFH4FSj/D7V87EHKhAarAAAAAElFTkSuQmCC</icon>
     <properties>
         <propertyGroup caption="General">
             <property key="content" type="widgets" required="true">
