@@ -67,6 +67,8 @@ Demo project will be released later, but this is very simple.
 
 ## Issues, suggestions and feature requests
 
+> **Note 1 (29/02/2020)**: Due to limitations, pluggable widgets that have content panes, do not accept other widgets like data views in their panes. This is currently a PLATFORM limitation, do not report this as an issue.
+
 Please report your issues [here](https://github.com/JelteMX/mendix-vertical-timeline/issues)
 
 ## License
