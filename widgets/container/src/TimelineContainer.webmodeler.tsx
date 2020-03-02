@@ -1,5 +1,5 @@
 import { Component, ReactNode, createElement } from "react";
-import { VerticalTimeline } from "react-vertical-timeline-component";
+import { VerticalTimeline } from "rc-vertical-timeline";
 import { TimelineContainerPreviewProps } from "../typings/TimelineContainerProps";
 
 declare function require(name: string): string;
