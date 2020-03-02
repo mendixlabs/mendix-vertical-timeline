@@ -29,12 +29,11 @@
     "@types/jest": "^24.0.0",
     "@types/react": "^16.8.17",
     "@types/react-dom": "^16.8.4",
-    "@types/react-test-renderer": "^16.8.1",
-    "@types/react-vertical-timeline-component": "^2.5.0"
+    "@types/react-test-renderer": "^16.8.1"
   },
   "dependencies": {
     "big.js": "^5.2.2",
     "classnames": "^2.2.6",
-    "react-vertical-timeline-component": "^2.5.0"
+    "rc-vertical-timeline": "^1.0.0"
   }
 }

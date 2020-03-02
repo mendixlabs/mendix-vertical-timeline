@@ -1,5 +1,5 @@
-import { Component, ReactNode, createElement } from "react";
-import { VerticalTimelineElement } from "react-vertical-timeline-component";
+import { Component, ReactNode, createElement, ReactElement } from "react";
+import { VerticalTimelineElement } from "rc-vertical-timeline";
 import { ValueStatus } from "mendix";
 import { Icon } from "mendix/components/web/Icon";
 import { hot } from "react-hot-loader/root";
@@ -20,7 +20,7 @@ class TimelineElement extends Component<TimelineElementContainerProps> {
                 style={style}
                 className={this.props.class}
                 iconOnClick={this.onClick}
-                icon={iconElement}
+                icon={iconElement as ReactElement}
                 position={position}
                 date={date}
             >
