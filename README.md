@@ -6,6 +6,7 @@
 [![Studio](https://img.shields.io/badge/Studio%20version-8.7%2B-blue.svg)](https://appstore.home.mendix.com/link/modeler/)
 [![GitHub release](https://img.shields.io/github/release/JelteMX/mendix-vertical-timeline)](https://github.com/JelteMX/mendix-vertical-timeline/releases/latest)
 [![GitHub issues](https://img.shields.io/github/issues/JelteMX/mendix-vertical-timeline)](https://github.com/JelteMX/mendix-vertical-timeline/issues)
+[![Available](https://img.shields.io/badge/Test%20Project-available-green.svg)](https://github.com/JelteMX/widget-test-projects)
 
 # Vertical Timeline
 
