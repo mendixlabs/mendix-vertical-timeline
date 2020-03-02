@@ -35,6 +35,6 @@
   "dependencies": {
     "big.js": "^5.2.2",
     "classnames": "^2.2.6",
-    "rc-vertical-timeline": "^1.0.0"
+    "rc-vertical-timeline": "^1.0.1"
   }
 }
