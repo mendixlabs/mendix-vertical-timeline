@@ -14,6 +14,10 @@ class TimelineContainer extends Component<TimelineContainerContainerProps> {
             return null;
         }
 
+        if (dataSource.items && dataSource.items.length === 0) {
+            return null;
+        }
+
         return (
             <VerticalTimeline
                 className={this.props.class}

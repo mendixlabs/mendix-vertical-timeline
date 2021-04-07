@@ -33,42 +33,53 @@ const clean = () => {
 const replaceStandalone = () => replace(' (standalone)', '');
 
 const copyWebModelerFiles = () =>
-    gulp.src([
-        path.join(tmpContainerFolder, `${fileNameContainer}.webmodeler.js`),
-        path.join(tmpElementFolder, `${fileNameElement}.webmodeler.js`)
-    ]).pipe(gulp.dest(tmpFolder)).on("error", console.error);
+    {
+        return gulp.src([
+            path.join(tmpContainerFolder, `${fileNameContainer}.webmodeler.js`),
+            path.join(tmpElementFolder, `${fileNameElement}.webmodeler.js`)
+        ]).pipe(gulp.dest(tmpFolder)).on("error", console.error);
+    }
+   
 
-const copyContainerXML = () =>
-    gulp.src(
-        path.join(tmpContainerFolder, `${fileNameContainer}.xml`)
-    ).pipe(replaceStandalone()).pipe(
-        replace('mendix.timelinecontainer.TimelineContainer', `mendix.${mainPKGName}.TimelineContainer`)
-    ).pipe(gulp.dest(tmpFolder)).on("error", console.error);
+const copyContainerXML = () => {
+        return gulp.src(
+            path.join(tmpContainerFolder, `${fileNameContainer}.xml`)
+        ).pipe(replaceStandalone()).pipe(
+            replace('mendix.timelinecontainer.TimelineContainer', `mendix.${mainPKGName}.TimelineContainer`)
+        ).pipe(gulp.dest(tmpFolder)).on("error", console.error);   
+}
 
-const copyElementXML = () =>
-    gulp.src(
-        path.join(tmpElementFolder, `${fileNameElement}.xml`)
-    ).pipe(replaceStandalone()).pipe(
-        replace('mendix.timelineelement.TimelineElement', `mendix.${mainPKGName}.TimelineElement`)
-    ).pipe(gulp.dest(tmpFolder)).on("error", console.error);
+const copyElementXML = () => {
+        return gulp.src(
+                path.join(tmpElementFolder, `${fileNameElement}.xml`)
+            ).pipe(replaceStandalone()).pipe(
+                replace('mendix.timelineelement.TimelineElement', `mendix.${mainPKGName}.TimelineElement`)
+            ).pipe(gulp.dest(tmpFolder)).on("error", console.error);
+    }    
 
-const copyContainerCSSFiles = () =>
-    gulp.src([
-        path.join(tmpContainerFolder, `mendix/timelinecontainer/ui/${fileNameContainer}.css`),
-        // path.join(tmpContainerFolder, `mendix/timelinecontainer/ui/${fileNameContainer}.css.map`),
-    ]).pipe(gulp.dest(path.join(dstFolder, "ui"))).on("error", console.error);
+const copyContainerCSSFiles = () => {
+        return gulp.src([
+            path.join(tmpContainerFolder, `mendix/timelinecontainer/ui/${fileNameContainer}.css`),
+            // path.join(tmpContainerFolder, `mendix/timelinecontainer/ui/${fileNameContainer}.css.map`),
+        ]).pipe(gulp.dest(path.join(dstFolder, "ui"))).on("error", console.error);
+}
+    
 
-const copyWidgetFiles = () =>
-    gulp.src([
+const copyWidgetFiles = () => {
+    return gulp.src([
         path.join(tmpContainerFolder, `mendix/timelinecontainer/${fileNameContainer}.js`),
         path.join(tmpElementFolder, `mendix/timelineelement/${fileNameElement}.js`),
     ]).pipe(gulp.dest(dstFolder)).on("error", console.error);
+}
+   
 
-const copyPackageXML = () =>
-    gulp
+const copyPackageXML = () => {
+        return gulp
         .src(path.join(__dirname, "package.xml"))
         .pipe(replace("XXX", pkg.version))
     .pipe(gulp.dest(tmpFolder)).on("error", console.error);
+}
+   
 
 const zipPackage = () =>
     gulp.
